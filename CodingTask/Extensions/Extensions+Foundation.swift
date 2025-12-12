@@ -85,3 +85,7 @@ extension Collection {
         !isEmpty
     }
 }
+
+enum ViewState {
+    case loading, noData, error, data
+}

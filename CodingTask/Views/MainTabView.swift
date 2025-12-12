@@ -22,7 +22,7 @@ struct MainTabView: View {
     }
     
     @State private var currentTab: TabSelection = .posts
-    @AppStorage("isLoggedIn") var isLoggedIn = false
+    @AppStorage("isLoggedIn") private var isLoggedIn = false
     
     var body: some View {
         TabView(selection: $currentTab) {

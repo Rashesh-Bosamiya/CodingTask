@@ -9,12 +9,16 @@ import SwiftUI
 
 struct OutlinedTextFieldStyle: TextFieldStyle {
     
-    @State var icon: String?
+    private var systemImage: String?
+
+    init(systemImage: String) {
+        self.systemImage = systemImage
+    }
     
     func _body(configuration: TextField<Self._Label>) -> some View {
         HStack {
-            if let icon {
-                Image(systemName: icon)
+            if let systemImage {
+                Image(systemName: systemImage)
                     .foregroundColor(Color(UIColor.systemGray4))
             }
             configuration

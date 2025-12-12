@@ -25,7 +25,3 @@ struct CodingTaskApp: App {
         }
     }
 }
-
-enum ViewState {
-    case loading, noData, error, data
-}

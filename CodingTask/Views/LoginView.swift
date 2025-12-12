@@ -13,13 +13,13 @@ struct LoginView: View {
     }
     
     @State private var viewModel: LoginViewModel = LoginViewModel()
-    @AppStorage("isLoggedIn") var isLoggedIn = false
+    @AppStorage("isLoggedIn") private var isLoggedIn = false
     @FocusState private var focusedField: Field?
     
     var body: some View {
         VStack(spacing: 20) {
             TextField("Email", text: $viewModel.email)
-                .textFieldStyle(OutlinedTextFieldStyle(icon: "envelope"))
+                .textFieldStyle(OutlinedTextFieldStyle(systemImage: "envelope"))
                 .focused($focusedField, equals: .email)
                 .textContentType(.emailAddress)
                 .submitLabel(.continue)
@@ -28,7 +28,7 @@ struct LoginView: View {
                     focusedField = .password
                 }
             SecureField("Password", text: $viewModel.password)
-                .textFieldStyle(OutlinedTextFieldStyle(icon: "key"))
+                .textFieldStyle(OutlinedTextFieldStyle(systemImage: "key"))
                 .focused($focusedField, equals: .password)
                 .textContentType(.password)
                 .submitLabel(.done)
