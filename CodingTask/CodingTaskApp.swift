@@ -6,12 +6,26 @@
 //
 
 import SwiftUI
+import Observation
 
 @main
 struct CodingTaskApp: App {
+
+    @AppStorage("isLoggedIn") private var isLoggedIn: Bool = false
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                if isLoggedIn {
+                    MainTabView()
+                } else {
+                    LoginView()
+                }
+            }
         }
     }
+}
+
+enum ViewState {
+    case loading, noData, error, data
 }

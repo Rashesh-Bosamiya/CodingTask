@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D9BACB762EE95E710069003B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D9BACB752EE95E710069003B /* RealmSwift */; };
+		D9BACB792EE95E990069003B /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D9BACB782EE95E990069003B /* RxCocoa */; };
+		D9BACB7B2EE95E990069003B /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D9BACB7A2EE95E990069003B /* RxSwift */; };
+		D9BACB7E2EE960130069003B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D9BACB7D2EE960130069003B /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		D9AC90A52EE947E30047F4E1 /* CodingTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +30,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9BACB762EE95E710069003B /* RealmSwift in Frameworks */,
+				D9BACB7E2EE960130069003B /* Alamofire in Frameworks */,
+				D9BACB7B2EE95E990069003B /* RxSwift in Frameworks */,
+				D9BACB792EE95E990069003B /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +76,10 @@
 			);
 			name = CodingTask;
 			packageProductDependencies = (
+				D9BACB752EE95E710069003B /* RealmSwift */,
+				D9BACB782EE95E990069003B /* RxCocoa */,
+				D9BACB7A2EE95E990069003B /* RxSwift */,
+				D9BACB7D2EE960130069003B /* Alamofire */,
 			);
 			productName = CodingTask;
 			productReference = D9AC90A52EE947E30047F4E1 /* CodingTask.app */;
@@ -94,6 +109,11 @@
 			);
 			mainGroup = D9AC909C2EE947E30047F4E1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D9BACB742EE95E710069003B /* XCRemoteSwiftPackageReference "realm-swift" */,
+				D9BACB772EE95E990069003B /* XCRemoteSwiftPackageReference "RxSwift" */,
+				D9BACB7C2EE960130069003B /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D9AC90A62EE947E30047F4E1 /* Products */;
 			projectDirPath = "";
@@ -260,7 +280,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.6;
@@ -277,7 +297,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 26.1;
+				XROS_DEPLOYMENT_TARGET = 2.6;
 			};
 			name = Debug;
 		};
@@ -302,7 +322,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.6;
@@ -319,7 +339,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 26.1;
+				XROS_DEPLOYMENT_TARGET = 2.6;
 			};
 			name = Release;
 		};
@@ -345,6 +365,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D9BACB742EE95E710069003B /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		D9BACB772EE95E990069003B /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.9.1;
+			};
+		};
+		D9BACB7C2EE960130069003B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D9BACB752EE95E710069003B /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D9BACB742EE95E710069003B /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		D9BACB782EE95E990069003B /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D9BACB772EE95E990069003B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		D9BACB7A2EE95E990069003B /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D9BACB772EE95E990069003B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		D9BACB7D2EE960130069003B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D9BACB7C2EE960130069003B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D9AC909D2EE947E30047F4E1 /* Project object */;
 }
